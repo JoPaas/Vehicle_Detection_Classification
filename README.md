@@ -24,8 +24,6 @@ The goals / steps of this project are the following:
 ---
 ### Writeup / README
 
-#### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one.  You can submit your writeup as markdown or pdf.  [Here](https://github.com/udacity/CarND-Vehicle-Detection/blob/master/writeup_template.md) is a template writeup for this project you can use as a guide and a starting point.  
-
 You're reading it!
 
 ### YOLO detection and classification CNN
@@ -48,6 +46,7 @@ options = {
 
 tfnet = TFNet(options)
 ```
+To replicate the outputs, go to [darkflow](https://github.com/thtrieu/darkflow), install the network by following the instructions and download the weights for 608x608 images. Create the `bin` folder in the `darkflow` directory and put the weights inside.
 
 The network puts out different classes, so first I filter for the class `car`. The output then contains the top-left and bottom-right corner of the bounding box. Below is an output image of the single image pipeline. You can see the different (yet in this case similar) colors of the bounding boxes, which indicate different detections, but more on that in the **Video** section
 
